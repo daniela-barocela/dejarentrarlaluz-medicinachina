@@ -16,57 +16,66 @@ function IconAcupuncture() {
   );
 }
 
-/** Habano de moxa con humo */
+/** Habano inclinado hacia abajo + humo que asciende desde la punta inferior */
 function IconMoxa() {
   return (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <rect
-        x="9.25"
-        y="14.5"
-        width="5.5"
-        height="8.25"
-        rx="2.4"
+      <line
+        x1="6.5"
+        y1="7"
+        x2="17.5"
+        y2="18"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="3.2"
+        strokeLinecap="round"
       />
       <path
-        d="M12 14.5C9.5 12 9 8 10.5 4.5 11 3 11.5 2"
+        d="M8 8.5c.32-.18.62-.32.92-.42"
         stroke="currentColor"
-        strokeWidth="1.35"
+        strokeWidth="1.1"
+        strokeLinecap="round"
+        opacity="0.42"
+      />
+      <path
+        d="M17.35 17.65C15.4 16.4 14.2 14.2 12.8 12.5C11.4 10.8 10.6 8.8 9.2 7.2C7.8 5.6 6.6 4 5.5 2.2"
+        stroke="currentColor"
+        strokeWidth="1.2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        opacity="0.9"
+        opacity="0.62"
       />
       <path
-        d="M12 14.2c2.5-2 3-5.5 1.5-8.5-.5-1-1-2.2-1.8-3"
+        d="M17.35 17.65C17.9 16 16.5 14.4 17.5 12.6C18.2 10.8 16.4 9.2 17.1 7.4C17.6 5.6 16.5 3.8 16.3 1.8"
         stroke="currentColor"
-        strokeWidth="1.35"
+        strokeWidth="1.28"
         strokeLinecap="round"
         strokeLinejoin="round"
-        opacity="0.9"
+        opacity="0.78"
       />
       <path
-        d="M12 14.2c-.8-1.8-.5-4 .8-6"
+        d="M17.35 17.65C19.3 16.3 20.6 14.1 21.9 12.3C23.1 10.6 23.4 8.5 23.2 6.6C23 5 22.4 3.4 22 1.9"
         stroke="currentColor"
-        strokeWidth="1.15"
+        strokeWidth="1.18"
         strokeLinecap="round"
-        opacity="0.55"
+        strokeLinejoin="round"
+        opacity="0.58"
       />
     </svg>
   );
 }
 
-/** Copa de ventosa */
+/** Copa de ventosa (cupping): cuello estrecho, paredes curvas, boca ancha hacia la piel */
 function IconCupping() {
   return (
     <svg className={iconClass} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <ellipse cx="12" cy="9" rx="5.5" ry="2" stroke="currentColor" strokeWidth="1.5" />
+      <line x1="12" y1="3.5" x2="12" y2="7.85" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
       <path
-        d="M6.5 9v2.5c0 4 2.2 7.5 5.5 7.5s5.5-3.5 5.5-7.5V9"
+        d="M12 7.85C8.6 8 6.45 11.8 6.45 16.4A5.55 1.4 0 0 1 17.55 16.4C17.55 11.8 15.4 8 12 7.85z"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
+        fill="none"
       />
     </svg>
   );

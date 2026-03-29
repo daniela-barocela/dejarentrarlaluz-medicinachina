@@ -30,16 +30,17 @@ const AboutSection = () => (
             Sobre mí
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Soy Daniela
+            Soy Daniela Barocela
           </h2>
           <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
             <p>
-              Practicante de Medicina Tradicional China con un enfoque profundamente humano.
+              Terapeuta en Medicina Tradicional China.
               Atiendo en Unquillo, en un espacio pensado para la calma y la escucha.
             </p>
             <p>
               Mi manera de trabajar integra lo corporal y lo emocional. Creo que los síntomas
               son mensajes, y que cuando les damos espacio, el cuerpo encuentra su camino de vuelta al equilibrio.
+              También estoy formada en Compassionate Inquiry, un enfoque psicoterapéutico informado en trauma y que trabaja desde la compasión.  
             </p>
             <p>
               Acompaño con presencia, sin juicio, con respeto por tus tiempos y tus procesos.
