@@ -4,7 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+// GitHub Pages project sites are served from /repo-name/ — assets must use that base path.
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/alma-clara/" : "/",
   server: {
     host: "::",
     port: 8080,
