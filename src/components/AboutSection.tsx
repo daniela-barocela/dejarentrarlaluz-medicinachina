@@ -1,4 +1,10 @@
 import { motion } from "framer-motion";
+import aboutPhoto from "@/assets/about-daniela.png";
+import { Button } from "@/components/ui/button";
+import { MessageCircle } from "lucide-react";
+
+const WHATSAPP_URL =
+  "https://wa.me/5491168344165?text=Hola%2C%20quiero%20empezar%20a%20sentirme%20mejor.%20Me%20gustar%C3%ADa%20contarte%20lo%20que%20me%20est%C3%A1%20pasando.";
 
 const AboutSection = () => (
   <section className="py-24 md:py-32 bg-background">
@@ -10,13 +16,12 @@ const AboutSection = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="w-full aspect-[3/4] rounded-3xl bg-accent flex items-center justify-center overflow-hidden">
-            <div className="text-center p-8">
-              <div className="w-24 h-24 rounded-full bg-primary/20 mx-auto mb-4 flex items-center justify-center">
-                <span className="font-heading text-4xl text-primary">D</span>
-              </div>
-              <p className="font-body text-sm text-muted-foreground">Daniela</p>
-            </div>
+          <div className="w-full aspect-[3/4] rounded-3xl bg-accent overflow-hidden">
+            <img
+              src={aboutPhoto}
+              alt="Daniela Barocela, terapeuta en Medicina Tradicional China, en un entorno natural al aire libre."
+              className="w-full h-full object-cover object-[48%_42%]"
+            />
           </div>
         </motion.div>
 
@@ -47,6 +52,20 @@ const AboutSection = () => (
               Cada persona es única, y cada sesión también.
             </p>
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 }}
+            className="mt-8"
+          >
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                Escribime por WhatsApp
+              </a>
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
     </div>

@@ -8,6 +8,20 @@ const painPoints = [
   "Intuís que lo que te pasa no es solo físico",
 ];
 
+const tcmPathologies = [
+  "Estrés y ansiedad",
+  "Insomnio y trastornos del sueño",
+  "Dolores crónicos (migrañas, lumbalgia, ciatalgia)",
+  "Dolor articular",
+  "Desajustes digestivos",
+  "Trastornos ginecológicos y ciclo menstrual",
+  "Infertilidad",
+  "Bruxismo",
+  "Tendinitis",
+  "Fatiga crónica",
+  "Y muchísimas cosas más…",
+];
+
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
@@ -55,10 +69,41 @@ const PainSection = () => (
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.6 }}
-        className="font-heading text-2xl md:text-3xl text-primary font-semibold italic"
+        className="font-heading text-2xl md:text-3xl text-primary font-semibold italic mb-16 md:mb-20"
       >
-        No estás sola/o. Y no es solo físico.
+        Tu sistema nervioso necesita atención y regulación.
       </motion.p>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="font-heading text-3xl md:text-5xl font-semibold text-foreground mb-4"
+      >
+        ¿Qué otras cosas podemos trabajar con Medicina china?
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        className="w-16 h-px bg-primary mx-auto mb-12"
+      />
+      <ul className="space-y-5 text-left max-w-xl mx-auto">
+        {tcmPathologies.map((item, i) => (
+          <motion.li
+            key={item}
+            custom={i}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+            className="flex items-start gap-4 font-body text-lg text-foreground/85"
+          >
+            <span className="mt-1.5 w-2 h-2 rounded-full bg-primary shrink-0" />
+            {item}
+          </motion.li>
+        ))}
+      </ul>
     </div>
   </section>
 );
