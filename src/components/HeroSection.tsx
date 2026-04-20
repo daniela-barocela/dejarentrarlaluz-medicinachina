@@ -35,7 +35,7 @@ const HeroSection = () => (
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="font-heading text-4xl md:text-6xl lg:text-7xl font-semibold text-[#6b5560] leading-tight mb-8 text-balance drop-shadow-[0_1px_3px_rgba(255,255,255,0.9)]"
+        className="font-heading text-4xl md:text-6xl lg:text-7xl font-semibold text-white leading-tight mb-8 text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
       >
         Tu cuerpo no está fallando, te está hablando
       </motion.h1>
