@@ -45,7 +45,7 @@ const CtaSection = () => (
         transition={{ delay: 0.6 }}
         className="font-body text-sm text-muted-foreground mt-8"
       >
-        Unquillo · Atención presencial
+        Unquillo, Córdoba. Atencion presencial
       </motion.p>
     </div>
   </section>

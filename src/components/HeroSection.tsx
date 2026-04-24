@@ -55,7 +55,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.4 }}
         className="font-body text-lg md:text-xl text-white max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]"
       >
-        Te acompaño a entender qué hay detrás de lo que sentís y a aliviarlo desde la raíz a través de la Medicina Tradicional China y la escucha terapéutica.
+        Desde la Medicina tradicional china te acompaño a regular y entender qué hay detrás de lo que sentís y aliviarlo desde la raíz.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
