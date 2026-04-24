@@ -91,6 +91,33 @@ function IconListening() {
   );
 }
 
+/** Árbol lineal, dos copas y tronco (mismo lenguaje que el resto de iconos) */
+function IconTreeMinimal() {
+  return (
+    <svg
+      className="size-6 shrink-0 text-primary"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden
+    >
+      <path
+        d="M12 2.5 6.5 12.5 17.5 12.5z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 7.5 7.5 16.5 16.5 16.5z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <line x1="12" y1="16.5" x2="12" y2="22" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 const services = [
   {
     name: "Acupuntura",
@@ -165,6 +192,20 @@ const ServicesSection = () => (
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
+        className="mt-12 flex flex-wrap items-center justify-center gap-2.5 text-center"
+      >
+        <IconTreeMinimal />
+        <p className="font-body text-foreground text-base md:text-lg">
+          <span className="font-heading font-semibold text-primary">¿En dónde? </span>
+          Unquillo, Córdoba
+        </p>
+      </motion.div>
     </div>
   </section>
 );
